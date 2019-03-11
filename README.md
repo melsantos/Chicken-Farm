@@ -11,4 +11,4 @@ by Chung "Charlie" Chin, Sayed Thurab, and Melissa Santos
 
 ## Built With
  + [Unity](https://unity3d.com/) for the game engine
-
+ + [Nature Kit](https://www.kenney.nl/assets/nature-kit) for environment
