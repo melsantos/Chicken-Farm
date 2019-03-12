@@ -1,12 +1,10 @@
-# A-Maze-ing
-A thrilling, immersize, a-MAZE-ing VR experience.
+# For Rest
+A relaxing Foreset walking simulator
 
 by Chung "Charlie" Chin, Sayed Thurab, and Melissa Santos
 
 ## Features
- + A handmade maze
- + An a-maze-ing UI
- + Some AI creature
+ + All the features have changed
  + and more edit me later don't this leave in here
 
 ## Built With
