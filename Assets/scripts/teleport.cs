@@ -21,6 +21,7 @@ public class teleport : MonoBehaviour {
     void OnTriggerEnter(Collider other)
     {
         other.transform.position = teleportTo.transform.position;
+        // other.transform.Rotate(teleportTo.transform.eulerAngles); // cannot force player rotate to because of MouseLook() script for FPS controller
         // other.transform.position += new Vector3(0, teleportHeight, 0);
         // Debug.Log(teleportHeight);
     }
