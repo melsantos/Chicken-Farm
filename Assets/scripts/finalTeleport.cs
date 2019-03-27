@@ -8,14 +8,15 @@ public class finalTeleport : MonoBehaviour {
     public string message;
     public AudioClip happyClucks;
     public AudioClip angryClucks;
+    public TextMesh textMesh;
 
     // Use this for initialization
     void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        textMesh = GameObject.Find("FirstPersonCharacter").GetComponent<TextMesh>();
+    }
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 
@@ -24,14 +25,20 @@ public class finalTeleport : MonoBehaviour {
         if (collect.score >= 5)
         {
             other.transform.position = teleportTo.transform.position;
-            message = "Congratulation!";
+            textMesh.text = "Congratulations!";
             AudioSource.PlayClipAtPoint(happyClucks, other.transform.position);
             AudioSource.PlayClipAtPoint(angryClucks, other.transform.position);
         }
         else
         {
-            message = "You haven't gathered all the chickens!";
+            textMesh.text = "You haven't gathered all the chickens!";
+            Invoke("Score", 2f);
         }
         
+    }
+
+    void Score()
+    {
+        textMesh.text = "Score: " + collect.score;
     }
 }

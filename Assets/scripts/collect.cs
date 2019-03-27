@@ -11,8 +11,6 @@ public class collect : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         score = 0;
-        //Debug.Log("!!! CHANGE COLLECT SCRIPT!! !!!");
-        //textMesh = GameObject.Find("CenterEyeAnchor").GetComponent<TextMesh>();
         textMesh = GameObject.Find("FirstPersonCharacter").GetComponent<TextMesh>();
     }
 
@@ -27,6 +25,6 @@ public class collect : MonoBehaviour {
         score++;
         textMesh.text = "Score: " + score;
         AudioSource.PlayClipAtPoint(caughtCluck, other.transform.position);
-        Debug.Log("Score: " + score);
+        //Debug.Log("Score: " + score);
     }
 }
