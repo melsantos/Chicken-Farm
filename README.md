@@ -1,7 +1,7 @@
 # Chicken Farm
 A VR game about a chicken farmer.
 
-![image](images/room_layout.png)
+![image](images/gameplay.gif)
 
 By Chung "Charlie" Chin, Sayed Thurab, and Melissa Santos
 
