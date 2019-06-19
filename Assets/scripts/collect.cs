@@ -11,7 +11,8 @@ public class collect : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         score = 0;
-        textMesh = GameObject.Find("FirstPersonCharacter").GetComponent<TextMesh>();
+        // textMesh = GameObject.Find("FirstPersonCharacter").GetComponent<TextMesh>(); // FPS Controller
+        textMesh = GameObject.Find("CenterEyeAnchor").GetComponent<TextMesh>(); // OVR
     }
 
     // Update is called once per frame

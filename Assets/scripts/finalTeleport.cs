@@ -12,7 +12,8 @@ public class finalTeleport : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        textMesh = GameObject.Find("FirstPersonCharacter").GetComponent<TextMesh>();
+        // textMesh = GameObject.Find("FirstPersonCharacter").GetComponent<TextMesh>(); // FPS Controller
+        textMesh = GameObject.Find("CenterEyeAnchor").GetComponent<TextMesh>(); // OVR
     }
 
     // Update is called once per frame
